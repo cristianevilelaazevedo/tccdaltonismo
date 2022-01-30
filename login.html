@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Landing Page de projeto de TCC para aplicação de técnicas de acessibilidade voltadas para usuários daltônicos.">
+    <title>TechPlann - Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <main class="container">
+        <h2>Login</h2>
+        <form onsubmit="alert('Obrigado por fazer login');">
+            <div class="input-field">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Senha">
+                <div class="underline"></div>
+            </div>
+
+            <div class="refsenha">
+                <h4 class="question">Esqueceu a senha?</h4>
+            </div>
+
+            <input type="submit" value="Entrar">
+        </form>
+
+        <div class="footer">
+            <h4 class="chamada">Não tem uma conta?</h4>
+            <h4 class="cta" onclick="location.href = 'formulario.html'"><strong>Cadastre-se!</strong></h4>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

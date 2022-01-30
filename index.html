@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Landing Page de projeto de TCC para aplicação de técnicas de acessibilidade voltadas para usuários daltônicos.">
+    <title>TechPlann - Planner Digital</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-logo" src="logo.svg" alt="Logo TechPlann" onclick="location.href = 'index.html'"
+            style="cursor: pointer;"> <!-- Logo -->
+        <nav class="cabecalho-menu">
+            <!-- Menu -->
+            <div class="cabecalho-menu-ancoras">
+                <!-- Âncoras -->
+                <a href="index.html" class="cabecalho-menu-ancoras-item">Home</a>
+                <a href="#conteudo-secundario-titular" class="cabecalho-menu-ancoras-item">Produto</a>
+                <a href="formulario.html" class="cabecalho-menu-ancoras-item">Cadastro</a>
+            </div>
+            <div class="cabecalho-menu-acoes">
+                <!-- Menu de Pesquisa e Login -->
+                <div class="cabecalho-menu-acoes-busca">
+                    <!-- Menu de Pesquisa -->
+                    <a class="cabecalho-menu-acoes-busca-txt">Busca</a>
+                    <img class="cabecalho-menu-acoes-busca-ico" src="busca.svg" alt="Ícone de pesquisa">
+                </div>
+                <div class="cabecalho-menu-acoes-login">
+                    <!-- Menu de Login -->
+                    <a href="login.html" class="cabecalho-menu-acoes-login-txt">Entrar</a>
+                    <img class="cabecalho-menu-acoes-login-ico" src="login.svg" alt="Ícone de login">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <!-- Conteúdo do Site -->
+        <section class="conteudo-principal">
+            <!-- Primeiro bloco -->
+            <div class="conteudo-principal-escrito">
+                <h4 class="conteudo-principal-escrito-lanc">Lançamento</h4>
+                <h1 class="conteudo-principal-escrito-titulo">UM ESPAÇO PARA A CRIATIVIDADE</h1>
+                <h3 class="conteudo-principal-escrito-paragrafo">Uma ferramenta poderosa que possibilita centralizar
+                    todos os seus planos em um único lugar e com acesso simplificado, dando espaço para a sua
+                    criatividade!</h3>
+
+                <button class="conteudo-principal-escrito-botao" onclick="location.href = 'formulario.html'">
+                    CRIE SUA CONTA
+                </button>
+            </div>
+            <img class="conteudo-principal-imagem" src="lua.svg" alt="Criatividade">
+        </section>
+
+        <section class="conteudo-secundario">
+            <!-- Segundo bloco -->
+            <div class="conteudo-secundario-titular" id="conteudo-secundario-titular">
+                <!-- Títulos -->
+                <h4 class="conteudo-secundario-titular-titulomenor">SOBRE O PROJETO</h4>
+                <h3 class="conteudo-secundario-titular-titulomaior">Techplann: Funcional com Simplicidade</h3>
+            </div>
+            <div class="conteudo-secundario-blocos">
+                <!-- Bloco de Informações -->
+                <div class="conteudo-secundario-blocos-escrito-bum">
+                    <!-- Bloco 1 - Organização -->
+                    <img class="conteudo-secundario-blocos-escrito-bum-imagem" src="calendar.svg"
+                        alt="Ícone de calendário representando organização">
+                    <h2 class="conteudo-secundario-blocos-escrito-bum-titulo">ORGANIZAÇÃO</h2>
+                    <p class="conteudo-secundario-blocos-escrito-bum-paragrafo">Facilita a organização do seu
+                        planejamento profissional e pessoal.</p>
+                </div>
+                <div class="conteudo-secundario-blocos-escrito-bdois">
+                    <!-- Bloco 2 - Interface -->
+                    <img class="conteudo-secundario-blocos-escrito-bdois-imagem" src="organiza.svg"
+                        alt="Ícone representando uma interface">
+                    <h2 class="conteudo-secundario-blocos-escrito-bdois-titulo">INTERFACE</h2>
+                    <p class="conteudo-secundario-blocos-escrito-bdois-paragrafo">Com a estruturação em cards a
+                        interface se torna mais intuitiva e simplificada.</p>
+                </div>
+                <div class="conteudo-secundario-blocos-escrito-btres">
+                    <!-- Bloco 3 - Estrutura -->
+                    <img class="conteudo-secundario-blocos-escrito-btres-imagem" src="estrutura.svg"
+                        alt="Ícone representando a estrutura do conteúdo da interface">
+                    <h2 class="conteudo-secundario-blocos-escrito-btres-titulo">ESTRUTURA</h2>
+                    <p class="conteudo-secundario-blocos-escrito-btres-paragrafo">Permite criar categorias e grupos,
+                        separar por cores, ícones ou imagens.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo-terciario">
+            <!-- Terceiro bloco -->
+            <div class="conteudo-terciario-escrito">
+                <h1 class="conteudo-terciario-escrito-titulo">ORGANIZAÇÃO DA SUA ROTINA</h1>
+                <p class="conteudo-terciario-escrito-paragrafo">Um ambiente seguro e funcional para suas atividades
+                    profissionais e pessoais.</p>
+            </div>
+            <!--<img class="conteudo-terciario-imagem" src="banner2.png" alt="Imagem ilustrativa de organização de escritório"> -->
+            <!-- Desativado - Imagem foi para background no CSS -->
+        </section>
+
+        <section class="conteudo-quartenario">
+            <!-- Última seção-->
+            <div class="conteudo-quartenario-escrito">
+                <!-- Texto -->
+                <h2 class="conteudo-quartenario-escrito-titulo">Cadastre-se!</h2>
+                <h4 class="conteudo-quartenario-escrito-subtitulo">É gratuito!</h4>
+                <p class="conteudo-quartenario-escrito-paragrafo">Crie sua conta e acesse um mundo de possibilidades!
+                    Você pode criar, em uma única conta, um espaço de trabalho individual para a sua carreira e vida
+                    pessoal.</p>
+                <button class="conteudo-quaternario-escrito-botao" onclick="location.href = 'formulario.html'">
+                    Cadastre-se Gratuitamente
+                </button>
+            </div>
+            <img class="conteudo-quaternario-imagem" src="nave.svg"
+                alt="Imagem ilustrativa de um foguete representando o avanço ao se cadastrar na plataforma">
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <!-- Rodapé -->
+        <!--<img class="rodape-imagem" src="footer.png" alt="Caixa de fundo semi transparente">-->
+        <!-- Desativado - Imagem passou para background no CSS -->
+        <div class="rodape-escrito-sbr">
+            <!-- Coluna 1 -->
+            <h3 class="rodape-escrito-sbr-titulo">SOBRE O PROJETO</h3>
+            <p class="rodape-escrito-sbr-paragrafo">Esse projeto foi idealizado com o propósito de executar as técnicas
+                de usabilidade e acessibilidade para portadores de daltonismo como parte do Trabalho de Conclusão de
+                Curso da graduação de Sistemas de Informação - 2021.</p>
+        </div>
+        <div class="rodape-escrito-cont">
+            <!-- Coluna 2 -->
+            <h3 class="rodape-escrito-cont-titulo">CONTATO</h3>
+            <div class="rodape-escrito-cont-flex">
+                <img class="rodape-escrito-cont-flex-imagem" src="email.svg" alt="Ícone de e-mail">
+                <p class="rodape-escrito-cont-flex-paragrafo">cristiane.2106786@discente.uemg.br</p>
+            </div>
+        </div>
+    </footer>
+    <h4 class="desenvolvido">Desenvolvido por Cristiane Vilela de Azevedo</h4>
+</body>
+
+</html>

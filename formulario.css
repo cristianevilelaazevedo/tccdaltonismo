@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Rubik:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+} 
+
+body {
+    font-size: 100%;
+    background: #2E2D33;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho { /*Cabeçalho*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.cabecalho-logo { /*Cabeçalho - Logo*/
+    height: 65px;
+}
+
+.cabecalho-menu { /*Cabeçalho Menu*/
+    display: flex;
+    gap: 120px;
+}
+
+.cabecalho-menu-ancoras {
+    display: flex; 
+    cursor: pointer;   
+}
+
+.cabecalho-menu-ancoras-item { /*Cabeçalho Menu - Âncoras do Menu*/
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    padding-right: 90px;
+}
+
+.cabecalho-menu-acoes { /*Cabeçalho Menu - Âncoras do Menu de Busca e login*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.cabecalho-menu-acoes-busca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho-menu-acoes-busca-txt { /*Cabeçalho Menu - Âncoras do Menu Busca*/
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;     
+}
+
+.cabecalho-menu-acoes-busca-ico { /*Cabeçalho Menu - Âncoras do Menu Ícone de Busca*/
+    width: 27px;
+    height: 26px;
+    color: #FFFFFF;    
+}
+
+.cabecalho-menu-acoes-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho-menu-acoes-login-txt { /*Cabeçalho Menu - Âncoras do Menu Login*/
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.cabecalho-menu-acoes-login-ico { /*Cabeçalho Menu - Âncoras do Menu Ícone de Login*/
+    width: 27px;
+    height: 26px;
+    color: #FFFFFF;
+}
+
+/*Cabeçalho do Formulário*/
+
+.retornar { /*Botão superior de voltar*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding-left: 117px;
+    border-top: 0.1px solid #FFFFFF;
+    padding-top: 20px; 
+    padding-bottom: 30px;   
+}
+
+.retornar-seta { /*Ícone de seta para retornar*/
+    width: 16px;
+    height: 16px;
+}
+
+.retornar-voltar { /*Palavra Voltar*/
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+#titulo { /*Título do Formulário*/
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    color: #F6F4FB;
+    padding-left: 117px;
+    padding-bottom: 10px;
+}
+
+#subtitulo { /*Subtítulo do Formulário*/
+    font-family: 'Rubik', sans-serif;    
+    font-weight: 400;
+    font-size: 15px;
+    color: #F6F4FB;
+    padding-left: 117px;
+    padding-bottom: 40px;
+}
+
+/*Início do Formulário*/
+
+.form {
+    padding-left: 117px;
+    padding-bottom: 70px;
+}
+
+fieldset { /*Elementos da tag <fieldset>*/
+    border: 0;
+}
+
+input { /* Elementos de tags <input> */
+    font-family: 'Rubik', sans-serif;    
+    font-weight: 400;
+    font-size: 17px;
+    color: #2E2D33;
+    border-radius: 4px;
+    border: 1px solid #2B5EFF;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.grupo:before, .grupo:after { /* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+    display: table-row;
+}
+
+.grupo:after { /* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+    clear: both;
+} 
+
+.campo { /*Elementos de classe "campo" */
+    margin-bottom: 2em;
+}
+
+.campo label { /*Elementos de classe "campo" de tag <label>*/
+    margin-bottom: 0.4em;
+    color: #F6F4FB;    
+    display: block;
+}
+
+fieldset.grupo .campo { /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+    float: left;
+    margin-right: 3em;
+}
+
+.campo input[type="radio"] { /* Elementos de classe campo das tags <input> com atributo radio */
+    margin-right: 7px;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="password"] { /* Elementos de classe "campo" das tags <input> com atributo text, email e senha */
+    padding: 0.3em;
+    border: 1px solid #2B5EFF;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    width: 333px;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus { /* Elemento de classe "campo" com tag <input> todas com estado da pseudoclasse "focus"*/
+    background: #E0E0F8;
+}
+
+.botoes { /*Div botoes*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+    padding-top: 20px;
+}
+
+.botao { /*Elemento da classe Botao*/
+    background-color: #2B5EFF;
+    width: 130px;
+    height: 30px;
+    border: none;
+    box-shadow: 1px 2px 4px rgba(28, 29, 30, 0.9);
+    border-radius: 35px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FAFAFA;
+}
+ 
+.botao:hover{ /*Elemento da classe Botao com hover*/
+    background: #8AAEBF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, .anular, .retornar { /*Elementos da classe botao, anular e retornar*/
+    cursor: pointer;
+}
+
+.anular { /*Elemento da classe Anular */
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2B5EFF;
+}
+
+.footer { /* Elementos do rodapé */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 0.1px solid #FFFFFF;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.footer-text { /* Texto do rodapé */
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #898989;
+    margin-left: 555px;
+    margin-right: 500px;
+}

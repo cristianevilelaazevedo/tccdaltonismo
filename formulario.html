@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Landing Page de projeto de TCC para aplicação de técnicas de acessibilidade voltadas para usuários daltônicos.">
+    <title>TechPlann - Cadastro de Conta</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-logo" src="logo.svg" alt="Logo TechPlann" onclick="location.href = 'index.html'"
+            style="cursor: pointer;"> <!-- Logo -->
+        <nav class="cabecalho-menu">
+            <!-- Menu -->
+            <div class="cabecalho-menu-ancoras">
+                <!-- Âncoras -->
+                <a href="index.html" class="cabecalho-menu-ancoras-item">Home</a>
+                <a class="cabecalho-menu-ancoras-item">Produto</a>
+                <a href="formulario.html" class="cabecalho-menu-ancoras-item">Cadastro</a>
+            </div>
+            <div class="cabecalho-menu-acoes">
+                <!-- Menu de Pesquisa e Login -->
+                <div class="cabecalho-menu-acoes-busca">
+                    <!-- Menu de Pesquisa -->
+                    <a class="cabecalho-menu-acoes-busca-txt">Busca</a>
+                    <img class="cabecalho-menu-acoes-busca-ico" src="busca.svg" alt="Ícone de pesquisa">
+                </div>
+                <div class="cabecalho-menu-acoes-login">
+                    <!-- Menu de Login -->
+                    <a href="login.html" class="cabecalho-menu-acoes-login-txt">Entrar</a>
+                    <img class="cabecalho-menu-acoes-login-ico" src="login.svg" alt="Ícone de login">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <a href="index.html" class="retornar">
+            <img class="retornar-seta" src="setavoltar.svg" alt="Ícone de voltar para a Home em formato de seta">
+            <h5 class="retornar-voltar">Voltar</h5>
+        </a>
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">CRIE SUA CONTA </h1>
+            <p id="subtitulo">Preencha seus dados com atenção. Não se preocupe, seus dados estarão seguros! </p>
+            <br>
+        </div>
+
+        <form class="form" onsubmit="alert('Obrigado por se cadastrar');">
+            <!-- Início do formulário -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <!-- Campo de nome -->
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <!-- Campo de Sobrenome -->
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <!-- Campo de E-mail -->
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <!-- Campo de Opção de Categorias -->
+                <label><strong>Qual é a categoria escolhida para essa conta?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="profissional">Profissional
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="organizacional">Organizacional
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="pessoal">Pessoal
+                </label>
+            </div>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <!-- Campo de Senha -->
+                    <label for="senha"><strong>Senha</strong></label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+
+                <div class="campo">
+                    <!-- Campo de Confirmação de Senha -->
+                    <label for="senha"><strong>Confirme a sua Senha</strong></label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+            </fieldset>
+
+            <div class="botoes">
+                <!-- Campo dos Botões -->
+                <button class="botao" type="submit">CONCLUIR</button>
+                <!-- Botão para Enviar o Formulário -->
+                <h3 class="anular" onclick="location.href = 'index.html'">Cancelar</h3>
+                <!-- Campo de Cancelar o Cadastramento antes do Envio -->
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <h4 class="footer-text"><strong>TechPlann - Planner Digital</strong></h4>
+    </footer>
+
+</body>
+
+</html>
