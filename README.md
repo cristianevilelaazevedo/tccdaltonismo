@@ -27,6 +27,10 @@ O layout do projeto foi desenvolvido no Figma e está disponível para visualiza
 <img alt="Feito por Cristiane Vilela" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
+## Deploy
+
+<p>O deploy do projeto pode ser visualizado no link: <a href="https://techplann.vercel.app/">TechPlann</a></p>
+
 ## Contato
 
 <div> 
